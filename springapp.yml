@@ -21,7 +21,7 @@ spec:
       - name: springappcontainer
         image: oldwarri/spring-boot-mongo
         ports:
-        - containerPort: 8000
+        - containerPort: 8080
         env:
         - name: MONGO_DB_USERNAME
           value: devdb
@@ -39,7 +39,7 @@ spec:
     app: springapp
   ports:
   - port: 80
-    targetPort: 8000
+    targetPort: 8080
     nodePort: 30030
   type: LoadBalancer
 ---
