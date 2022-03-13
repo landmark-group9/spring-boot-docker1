@@ -6,6 +6,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: springappdeployment
+  namespace: dev
 spec:
   replicas: 2
   selector:
@@ -22,6 +23,13 @@ spec:
         image: oldwarri/spring-boot-mongo
         ports:
         - containerPort: 8080
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "64Mi"
+          limits:
+            cpu: "110m"
+            memory: "69Mi 
         env:
         - name: MONGO_DB_USERNAME
           value: devdb
@@ -33,10 +41,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: springapp
+  name: springappsvc
 spec:
   selector:
-    app: springapp
+    app: springappdeployment
   ports:
   - port: 80
     targetPort: 8080
