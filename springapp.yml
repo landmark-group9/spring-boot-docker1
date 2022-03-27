@@ -45,7 +45,7 @@ metadata:
   namespace: dev
 spec:
   selector:
-    app: springappdeployment
+    app: springapp
   ports:
   - port: 80
     targetPort: 8080
