@@ -17,7 +17,7 @@
 		<java.version>1.8</java.version>
 		<spring-boot.version>2.7.1</spring-boot.version>
 		<spring-cloud.version>Hoxton.SR10</spring-cloud.version>
-		<logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
+		<logstash-logback-encoder.version>7.2</logstash-logback-encoder.version>
 		<sonar.host.url>http:sonarcloud.io:80/</sonar.host.url>
 		<sonar.token>eeb3e98854e0642d9292b90d76585230fd18c931</sonar.token>
 	</properties>
