@@ -6,7 +6,7 @@ metadata:
   # If using a dedicated IAM role for kube-bench, uncomment the annotations
   # block below and replace the ROLE_ARN
   # annotations:
-  eks.amazonaws.com/role-arn: "arn:aws:iam::178557069159:role/terraform-eks-demo-node"
+  # eks.amazonaws.com/role-arn: "arn:aws:iam::178557069159:role/terraform-eks-demo-node"
 
 ---
 apiVersion: v1
@@ -15,7 +15,7 @@ metadata:
   name: kube-bench-eks-config
 data:
   config.yaml: |
-    AWS_ACCOUNT: "<178557069159>"
+    AWS_ACCOUNT: "178557069159"
     AWS_REGION: "us-east-1"
     CLUSTER_ARN: "arn:aws:eks:us-east-1:178557069159:cluster/terraform-eks-demo"
 
