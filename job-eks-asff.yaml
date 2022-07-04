@@ -15,9 +15,9 @@ metadata:
   name: kube-bench-eks-config
 data:
   config.yaml: |
-    AWS_ACCOUNT: "<AWS_ACCT_NUMBER>"
-    AWS_REGION: "<AWS_REGION>"
-    CLUSTER_ARN: "<AWS_CLUSTER_ARN>"
+    AWS_ACCOUNT: "<178557069159>"
+    AWS_REGION: "us-east-1"
+    CLUSTER_ARN: "arn:aws:eks:us-east-1:178557069159:cluster/terraform-eks-demo"
 
 ---
 apiVersion: batch/v1
