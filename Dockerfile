@@ -1,4 +1,4 @@
-FROM openjdk:19-jdk
+FROM openjdk:19-ea-31-slim-bullseye
 # #Required for starting application up.
 RUN apk update && apk add /bin/sh
 RUN mkdir -p /opt/app
